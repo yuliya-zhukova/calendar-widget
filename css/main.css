@@ -9,8 +9,7 @@
 .calendar-widget__month-name {
   height: 35px;
   line-height: 35px;
-  color: #fff;
-  font-size: 10px;
+  font-size: 8px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   background-color: #061317;
@@ -22,6 +21,11 @@
   list-style-type: none;
   padding: 0;
   margin: 0 15px;
+}
+
+.item-menu {
+  text-decoration: none;
+  color: #fff;
 }
 
 .day-name {
