@@ -33,19 +33,7 @@ $weekend_color: #ea2924;
   color: $linl_color;
 }
 
-.day-name {
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-  margin-left: 12px;
-  margin-right: 12px;
-  color: $main_color;
-  font-size: 7px;
-  list-style-type: none;
-  opacity: 0.5;
-}
-
-.day-number {
+.days {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -55,6 +43,11 @@ $weekend_color: #ea2924;
   font-size: 8px;
   color: $main_color;
   list-style-type: none;
+}
+
+.week {
+  font-size: 7px;
+  opacity: 0.5;
 }
 
 .day {
