@@ -18,6 +18,12 @@ $weekend_color: #ea2924;
     border-top-right-radius: $border-radius;
     background-color: $main_color;
   }
+
+  &__month {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 12px;
+  }
 }
 
 .selection {
@@ -34,28 +40,22 @@ $weekend_color: #ea2924;
 }
 
 .days {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  padding: 0;
-  margin-left: 12px;
-  margin-right: 12px;
+  display: grid;
+  grid-template-columns: 18px 18px 18px 18px 18px 18px 18px;
+  grid-row-gap: 6px;
   font-size: 8px;
   color: $main_color;
   list-style-type: none;
 }
 
 .week {
+  margin-bottom: 10px;
   font-size: 7px;
   opacity: 0.5;
 }
 
 .day {
-  width: 18px;
-  height: 10px;
-  line-height: 10px;
   text-align: center;
-  margin-bottom: 5px;
 }
 
 .weekend,
