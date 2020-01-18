@@ -1,6 +1,7 @@
 $border-radius: 5px;
 $linl_color: #fff;
-$main_color: #061317;
+$main_color: #247ba0;
+$text_color: #061317;
 $weekend_color: #ea2924;
 
 .calendar-widget {
@@ -44,7 +45,7 @@ $weekend_color: #ea2924;
   grid-template-columns: 18px 18px 18px 18px 18px 18px 18px;
   grid-row-gap: 6px;
   font-size: 8px;
-  color: $main_color;
+  color: $text_color;
   list-style-type: none;
 }
 
