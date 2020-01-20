@@ -1,22 +1,24 @@
-$border-radius: 5px;
+$border-radius: 10px;
 $linl_color: #fff;
 $main_color: #247ba0;
 $text_color: #061317;
 $weekend_color: #ea2924;
 
 .calendar-widget {
-  width: 150px;
-  height: 150px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #e5e5e5;
   border-radius: $border-radius;
+  box-sizing: content-box;
 
   &__header {
     display: flex;
     justify-content: space-between;
-    padding: 0 12px;
-    height: 35px;
-    line-height: 35px;
+    padding: 0 30px;
+    height: 60px;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
     background-color: $main_color;
@@ -27,33 +29,30 @@ $weekend_color: #ea2924;
     border: none;
     outline: none;
     padding: 0;
-    font-size: 8px;
+    font-size: 16px;
     color: $linl_color;
     background-color: $main_color;
     cursor: pointer;
   }
-
   }
 
   &__content {
-    display: flex;
-    flex-direction: column;
-    margin: 10px 12px;
+    flex-grow: 4;
+    margin: 20px 30px;
   }
 }
 
 .days {
   display: grid;
-  grid-template-columns: 18px 18px 18px 18px 18px 18px 18px;
-  grid-row-gap: 6px;
-  font-size: 8px;
+  grid-template-columns: 34px 34px 34px 34px 34px 34px 34px;
+  grid-row-gap: 14px;
+  font-size: 16px;
   color: $text_color;
-  list-style-type: none;
 }
 
 .week {
-  margin-bottom: 10px;
-  font-size: 7px;
+  margin-bottom: 20px;
+  font-size: 12px;
   opacity: 0.5;
 }
 
