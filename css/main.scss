@@ -44,8 +44,9 @@ $weekend_color: #ea2924;
 
 .days {
   display: grid;
-  grid-template-columns: repeat(7, 34px);
+  grid-template-columns: repeat(7, 30px);
   grid-row-gap: 14px;
+  grid-column-gap: 5px;
   font-size: 16px;
   color: $text_color;
   text-align: center;
@@ -57,7 +58,21 @@ $weekend_color: #ea2924;
   opacity: 0.5;
 }
 
+.day {
+  cursor: pointer;
+}
+
 .weekend,
 .holiday {
   color: $weekend_color;
+}
+
+.today,
+.selected {
+  border: 1px solid $main_color;
+  border-radius: 2px;
+}
+
+.selected {
+  background-color: $main_color;
 }
