@@ -48,16 +48,13 @@ $weekend_color: #ea2924;
   grid-row-gap: 14px;
   font-size: 16px;
   color: $text_color;
+  text-align: center;
 }
 
 .week {
   margin-bottom: 20px;
   font-size: 12px;
   opacity: 0.5;
-}
-
-.day {
-  text-align: center;
 }
 
 .weekend,
