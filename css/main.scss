@@ -12,6 +12,10 @@ $weekend_color: #ea2924;
   border-radius: $border-radius;
 
   &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+    color: $linl_color;
     height: 35px;
     line-height: 35px;
     font-size: 8px;
@@ -25,16 +29,6 @@ $weekend_color: #ea2924;
     flex-direction: column;
     margin: 10px 12px;
   }
-}
-
-.selection {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 15px;
-}
-
-.item-menu {
-  color: $linl_color;
 }
 
 .days {
