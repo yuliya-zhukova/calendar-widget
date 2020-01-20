@@ -11,7 +11,7 @@ $weekend_color: #ea2924;
   background-color: #e5e5e5;
   border-radius: $border-radius;
 
-  &__month-name {
+  &__header {
     height: 35px;
     line-height: 35px;
     font-size: 8px;
@@ -20,7 +20,7 @@ $weekend_color: #ea2924;
     background-color: $main_color;
   }
 
-  &__month {
+  &__content {
     display: flex;
     flex-direction: column;
     margin: 10px 12px;
