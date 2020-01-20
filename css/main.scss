@@ -30,13 +30,10 @@ $weekend_color: #ea2924;
 .selection {
   display: flex;
   justify-content: space-between;
-  list-style-type: none;
-  padding: 0;
   margin: 0 15px;
 }
 
 .item-menu {
-  text-decoration: none;
   color: $linl_color;
 }
 
