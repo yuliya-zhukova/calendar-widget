@@ -1,5 +1,5 @@
 $border-radius: 10px;
-$linl_color: #fff;
+$header_color: #fff;
 $main_color: #247ba0;
 $text_color: #061317;
 $weekend_color: #ea2924;
@@ -30,7 +30,7 @@ $weekend_color: #ea2924;
       outline: none;
       padding: 0;
       font-size: 16px;
-      color: $linl_color;
+      color: $header_color;
       background-color: $main_color;
       cursor: pointer;
     }
