@@ -23,56 +23,56 @@ $weekend_color: #ea2924;
     border-top-right-radius: $border-radius;
     background-color: $main_color;
 
-  &_previous,
-  &_current,
-  &_next {
-    border: none;
-    outline: none;
-    padding: 0;
-    font-size: 16px;
-    color: $linl_color;
-    background-color: $main_color;
-    cursor: pointer;
-  }
+    &_previous,
+    &_current,
+    &_next {
+      border: none;
+      outline: none;
+      padding: 0;
+      font-size: 16px;
+      color: $linl_color;
+      background-color: $main_color;
+      cursor: pointer;
+    }
   }
 
   &__content {
     flex-grow: 4;
     margin: 20px 30px;
   }
-}
 
-.days {
-  display: grid;
-  grid-template-columns: repeat(7, 30px);
-  grid-row-gap: 14px;
-  grid-column-gap: 5px;
-  font-size: 16px;
-  color: $text_color;
-  text-align: center;
-}
+  &__days {
+    display: grid;
+    grid-template-columns: repeat(7, 30px);
+    grid-row-gap: 14px;
+    grid-column-gap: 5px;
+    font-size: 16px;
+    color: $text_color;
+    text-align: center;
 
-.week {
-  margin-bottom: 20px;
-  font-size: 12px;
-  opacity: 0.5;
-}
+    &_week {
+      margin-bottom: 20px;
+      font-size: 12px;
+      opacity: 0.5;
+    }
+  }
 
-.day {
-  cursor: pointer;
-}
+  &__day {
+    cursor: pointer;
 
-.weekend,
-.holiday {
-  color: $weekend_color;
-}
+    &_weekend,
+    &_holiday {
+      color: $weekend_color;
+    }
 
-.today,
-.selected {
-  border: 1px solid $main_color;
-  border-radius: 2px;
-}
+    &_today,
+    &_selected {
+      border: 1px solid $main_color;
+      border-radius: 2px;
+    }
 
-.selected {
-  background-color: $main_color;
+    &_selected {
+      background-color: $main_color;
+    }
+  }
 }
