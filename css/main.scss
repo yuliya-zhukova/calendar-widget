@@ -12,20 +12,21 @@ $weekend_color: #ea2924;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #e5e5e5;
   border-radius: $border-radius;
-  box-sizing: content-box;
+  // box-sizing: content-box;
 
   &__header {
     display: flex;
     justify-content: space-between;
-    padding: 0 30px;
+    align-items: center;
+    padding: 0 30px 0 20px;
     height: 60px;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
     background-color: $main_color;
+    box-sizing: content-box;
 
-    &_previous,
-    &_current,
-    &_next {
+    &-item {
+      position: relative;
       border: none;
       outline: none;
       padding: 0;
@@ -33,7 +34,24 @@ $weekend_color: #ea2924;
       color: $header_color;
       background-color: $main_color;
       cursor: pointer;
-    }
+
+        &_previous::before,
+        &_next::before {
+          position: absolute;
+          content: '';
+          width: 15px;
+          height: 15px;
+          top: -5px;
+          background-image: url('../img/next-icon.png');
+          background-repeat: no-repeat;
+          background-size: 75%;
+        }
+
+        &_previous::before {
+          transform: rotate(180deg);
+          top: -10px;
+        }
+      }
   }
 
   &__content {
